@@ -5,7 +5,7 @@ func unimplementedFunction(file: String = #file, function: String = #function, l
     fatalError("Unimplemented function \(function) in \(file):\(line)")
 }
 
-extension Observable {
+extension RxSwift.Observable {
     static func unimplemented(file: String = #file, function: String = #function, line: Int = #line)
     -> RxSwift.Observable<Element> {
         unimplementedFunction(file: file, function: function, line: line)
